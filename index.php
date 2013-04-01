@@ -51,7 +51,7 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             url: 'ajax/user_admin.php',
-            data: { action: 'delete_user', email: email }
+            data: { action: 'delete_user' }
         }).done(function(result) {
             if(result.substr(0, 7) == 'SUCCESS') {
                 window.location = 'index.php';

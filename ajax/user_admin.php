@@ -48,7 +48,7 @@
     }
     else if($action == 'delete_user') {
         $em = $_SESSION['email'];
-        $sql  = "delete from users where email='$em";
+        $sql  = "delete from users where email='$em'";
         $res = $dbconn->query($sql);
         if(!$res) { die('ERROR: Delete failed: ' . $dbconn->error); }
         $_SESSION['email'] = '';
