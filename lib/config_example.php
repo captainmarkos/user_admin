@@ -17,4 +17,7 @@
         printf("Error loading character set utf8: %s\n", $dbconn->error);
         exit();
     }
+
+    session_start();
+
 ?>
